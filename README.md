@@ -14,5 +14,5 @@ mv terraform.tfstate* /tmp/
 ## Test import
 
 ```
-terraform import 
+terraform import aws_vpc.test $VPC_ID
 ```
