@@ -20,8 +20,10 @@ Save `vpc_id` from `Outputs` of apply. Use this in the next step:
 cd import
 terraform init
 terraform import aws_vpc.test $VPC_ID
-terraform apply
+terraform plan
 ```
+
+Don't apply, refer to the plan, example here:
 
 ```
 

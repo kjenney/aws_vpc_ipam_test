@@ -1,9 +1,9 @@
 data "aws_region" "current" {}
 
 data "aws_vpc_ipam_pool" "test" {
-  filter {
-    name   = "address-family"
-    values = ["ipv4"]
+  filter { 
+    name   = "tag:Name"
+    values = ["Test Pool"]
   }
 }
 
