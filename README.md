@@ -9,4 +9,10 @@ Then import the VPC and try to provision
 ```
 terraform init
 terraform apply
+mv terraform.tfstate* /tmp/
+```
+## Test import
+
+```
+terraform import 
 ```
