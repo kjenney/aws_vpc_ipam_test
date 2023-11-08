@@ -27,3 +27,8 @@ resource "aws_vpc" "test" {
     aws_vpc_ipam_pool_cidr.test
   ]
 }
+
+output "vpc_id" {
+  description = "VPC ID"
+  value       =  aws_vpc.test.id
+}
